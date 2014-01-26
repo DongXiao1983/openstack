@@ -72,5 +72,15 @@ After publish sucessfull, to check the image .
 
 ## Q&A    
 * Error：AMQP server on 10.0.0.23:5672 is unreachable: [Errno 111] ECONNREFUSED. Trying again in 3 seconds.
-	
-	service rabbitmq-server restart
+
+    	service rabbitmq-server restart
+
+
+* Some usefull init file.    
+
+    	[root@nsn-controller /tmp]# find / -name "api-paste.ini"    
+    	/etc/neutron/api-paste.ini   
+    	/etc/cinder/api-paste.ini    
+    	/etc/nova/api-paste.ini    
+    	/etc/heat/api-paste.ini   
+    	/usr/etc/neutron/api-paste.ini      
