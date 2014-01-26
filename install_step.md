@@ -70,3 +70,7 @@ After publish sucessfull, to check the image .
 
 	nova-manage service list
 
+## Q&A    
+* Error：AMQP server on 10.0.0.23:5672 is unreachable: [Errno 111] ECONNREFUSED. Trying again in 3 seconds.
+	
+	service rabbitmq-server restart
