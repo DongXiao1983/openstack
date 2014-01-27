@@ -27,9 +27,11 @@ nova delete myserver2
 #### Vistual Command
 brctl    
 virsh    
-
+    
 tgtadm --lld iscsi --op show --mode target 控制节点查看target    
+
     tgtadm --op new --lld=iscsi --mode=target --tid=1 --targetname=iqn.2010-10.org.openstack:volume-00000001 
 
 nova 挂接实例/分区    
+
     nova-rootwrap guestmount --rw -a /home/instances/instance-0000001b/disk -m /dev/sda1 /tmp/tmpfe4fNg
