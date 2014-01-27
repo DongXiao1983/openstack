@@ -84,3 +84,17 @@ After publish sucessfull, to check the image .
     	/etc/nova/api-paste.ini    
     	/etc/heat/api-paste.ini   
     	/usr/etc/neutron/api-paste.ini      
+
+* Enable & Disabled Debug   
+
+    	/etc/nova/nova.conf 
+		    ---> debug=false(true)
+
+		[root@nsn-controller /tmp]# nova-manage service list
+		Binary           Host                                 Zone             Status     State Updated_At
+		nova-consoleauth nsn-controller                       internal         enabled    :-)   2014-01-27 13:58:50
+		nova-scheduler   nsn-controller                       internal         enabled    :-)   2014-01-27 13:58:51
+		nova-conductor   nsn-controller                       internal         enabled    :-)   2014-01-27 13:58:52
+		nova-compute     nsn-controller                       nova             enabled    :-)   2014-01-27 13:58:52
+		nova-network     nsn-controller                       internal         enabled    XXX   2014-01-24 00:17:53
+		nova-cert        nsn-controller                       internal         enabled    XXX   2014-01-24 00:17:53
