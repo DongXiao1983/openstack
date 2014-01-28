@@ -70,6 +70,21 @@ After publish sucessfull, to check the image .
 
 	nova-manage service list
 
+#### configure netbrige
+	
+	brctl addbr br100
+	brctl addif br100 eth1
+	ifconfig eth1 down
+	ifconfig eth1 0.0.0.0 up
+	ifconfig br100 10.0.0.1 netmask 255.255.255.0 up
+
+	
+#### start nova-network
+
+	vim /opt/tcp/tcp_config
+	add "nova-network"
+	
+	
 ## Q&A    
 * Error：AMQP server on 10.0.0.23:5672 is unreachable: [Errno 111] ECONNREFUSED. Trying again in 3 seconds.
 
