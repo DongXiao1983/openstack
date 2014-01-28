@@ -73,6 +73,7 @@ After publish sucessfull, to check the image .
 #### configure netbrige
 	
 	brctl addbr br100
+	brctl stp br100 on
 	brctl addif br100 eth1
 	ifconfig eth1 down
 	ifconfig eth1 0.0.0.0 up
