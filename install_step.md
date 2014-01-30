@@ -75,8 +75,7 @@ After publish sucessfull, to check the image .
 	brctl addbr br100
 	brctl stp br100 on
 	brctl addif br100 eth1
-	ifconfig eth1 down
-	ifconfig eth1 0.0.0.0 up
+	brctl addif br100 **vm interface**
 	ifconfig br100 10.0.0.1 netmask 255.255.255.0 up
 
 	
@@ -84,6 +83,10 @@ After publish sucessfull, to check the image .
 
 	vim /opt/tcp/tcp_config
 	add "nova-network"
+	
+#### disabled route for eth1
+
+	route del -net 10.0.0.0 netmask 255.255.255.0 dev eth1
 	
 	
 ## Q&A    
