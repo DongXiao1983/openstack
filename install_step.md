@@ -79,7 +79,7 @@ After publish sucessfull, to check the image .
 	ifconfig br100 10.0.0.1 netmask 255.255.255.0 up
 
 	
-#### start nova-network
+#### start nova-network(may be not needed)
 
 	vim /opt/tcp/tcp_config
 	add "nova-network"
