@@ -76,7 +76,16 @@ After publish sucessfull, to check the image .
 	brctl stp br100 on
 	brctl addif br100 eth1
 	brctl addif br100 **vm interface**
-	ifconfig br100 10.0.0.1 netmask 255.255.255.0 up
+	ifconfig br100 10.0.0.1 netmask 255.255.255.0 up    
+	
+if can't ping access    
+
+	[root@nsn-controller ~]# ping 10.0.0.11
+	PING 10.0.0.11 (10.0.0.11) 56(84) bytes of data.
+	From 10.0.0.1 icmp_seq=1 Destination Host Unreachable
+	From 10.0.0.1 icmp_seq=2 Destination Host Unreachable    
+
+delete interface from bridge and add again.
 
 	
 #### start nova-network(may be not needed)
