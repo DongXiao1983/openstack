@@ -3,7 +3,7 @@
 
 1.create virtul disk     
    
-	qemu-img create -f qoow2 /tmp/centos-6.4.qcow2 10G
+	qemu-img create -f qcow2 /tmp/centos-6.4.qcow2 10G
 
 2.install os to virtul disk   
 	
