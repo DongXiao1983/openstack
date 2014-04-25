@@ -36,7 +36,7 @@ lvcreate -L 100M -n mylv1 myvg1 && lvdisplay
 
 5.格式化LV：    
 mkfs.ext4 /dev/myvg1/mylv1     
-格式化的时候可以加-L参数指定下LABEL方便挂载，省去找设备路径的麻烦。    
+格式化的时候可以加-L参数指定下LABEL方便挂载，省去找设备路径的麻烦。  这步很重要  
 
 6.挂载：    
 mkdir /mnt/mylv1 && mount /dev/myvg1/mylv1 /mnt/mylv1     
