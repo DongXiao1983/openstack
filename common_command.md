@@ -116,3 +116,13 @@ nova 挂接实例/分区
     glance add name="CentOS-6.3_Fina_raw" is_public=true container_format=bare disk_format=raw < CentOS-6.3_Fina_raw.img
 
 重新生成实例
+
+
+#### 4. 绑定KVM的cpu到主机固定CPU    
+
+    ps -eL | grep kvm    
+    cat /proc/xxxx/statu    
+    Cpus_allowed: 3    
+    Cpus_allowed_list: 0-1    
+    
+    
