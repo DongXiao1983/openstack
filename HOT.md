@@ -17,3 +17,20 @@ It is critical in the delivery of cloud services because:
 
 
 Orchestration就是将服务中涉及的工具、流程、结构描述成一个可执行的流程，结合软硬件的接口，使之可以按照描述自动化、可重复地交付。具体到Cloud Orchestration，主要就是通过定义一系列的元数据来描述交付过程中涉及的环境管理(OS. network, storage ..)、软件包管理、配置管理以及监控和升级操作，以便自动化和标准化地完成从申请资源到交付/升级服务的整个生命周期。    
+
+
+
+1. packet CRC problem
+2. Event machine proposal -> satish
+    -- internal -> SDN
+3. DPDK Solution -> all
+4. Scalable Dat Plane
+   -- Asymmetric, packet 
+5. PMD frame work, PMD-PCAP, IGb_UIO,UIO
+6. OSV_DPDK
+7. DPDK dependancy with NICS
+8. Control plane -> compotetion intensive
+9. Data plane -> lertency
+10. BSC + FCC  Transpot -> reuse
+11.internal study: MBB, CORE, SRAN
+12.
