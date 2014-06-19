@@ -34,3 +34,16 @@ Orchestration就是将服务中涉及的工具、流程、结构描述成一个�
 10. BSC + FCC  Transpot -> reuse
 11.internal study: MBB, CORE, SRAN
 12.
+
+
+
+Please check these videos.
+
+AT&T & Ericsson  /// OpenStack videos: 
+
+http://www.youtube.com/watch?v=eeaTQsZdxHE&sns=e
+
+https://www.openstack.org/summit/openstack-summit-atlanta-2014/session-videos/presentation/openstack-as-the-key-engine-of-nfv
+
+Ericsson
+
