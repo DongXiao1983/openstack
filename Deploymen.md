@@ -36,18 +36,18 @@
    download, and make install
    
 6. Install openstack rpms    
-
-    yum install openstack-swift*
-    yum install openstack-glance*
-    yum install openstack-horizen*
-    yum install openstack-hori*
-    yum install openstack-utils
-    yum install openstack-selinux
-    yum install openstack-keystone python-keystoneclient
-    yum install openstack-dashboard*
-    yum install openstack-cinder*
-    yum install rabbitmq-server*
-    yum install libvirt*
-    yum install openstack-heat-*
-    yum install openstack-ceilometer*
+    
+    yum install openstack-swift*   
+    yum install openstack-glance*    
+    yum install openstack-horizen*    
+    yum install openstack-hori*    
+    yum install openstack-utils    
+    yum install openstack-selinux     
+    yum install openstack-keystone python-keystoneclient    
+    yum install openstack-dashboard*    
+    yum install openstack-cinder*    
+    yum install rabbitmq-server*    
+    yum install libvirt*    
+    yum install openstack-heat-*    
+    yum install openstack-ceilometer*    
  
