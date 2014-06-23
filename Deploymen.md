@@ -1,9 +1,11 @@
 1. Install CentOS 6.5    
 
-    This parts is needed:
+    These parts is needed:
     gcc
-    virtualling 
-
+    virtualization
+    python > 3.0
+    vnc
+    
 2. Make a icehouse repo   
 
     openstack-icehouse]    
@@ -41,7 +43,7 @@
     yum install openstack-glance*    
     yum install openstack-horizen*    
     yum install openstack-hori*    
-    yum install openstack-utils    
+    yum instal openstack-utils    
     yum install openstack-selinux     
     yum install openstack-keystone python-keystoneclient    
     yum install openstack-dashboard*    
@@ -50,4 +52,6 @@
     yum install libvirt*    
     yum install openstack-heat-*    
     yum install openstack-ceilometer*    
- 
+    yum install openstack-trove* 
+
+
