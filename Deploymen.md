@@ -14,7 +14,7 @@
     enabled=1    
     skip_if_unavailable=0    
     gpgcheck=1     
-    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RDO-Icehouse    
+    gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-RDO-Icehouse       
     priority=98    
 
 3. Make a commom repo    
