@@ -44,7 +44,7 @@
 	    yum install openstack-glance*    
 	    yum install openstack-horizen*    
 	    yum install openstack-hori*    
-	    yum instal openstack-utils    
+	    yum install openstack-utils    
 	    yum install openstack-selinux     
 	    yum install openstack-keystone python-keystoneclient    
 	    yum install openstack-dashboard*    
