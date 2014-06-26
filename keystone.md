@@ -31,6 +31,10 @@
 
 6. export TOKEN & ENDPOINT     
 
+	 export OS_SERVICE_TOKEN=ADMIN    
+	 export OS_SERVICE_ENDPOINT=http://100.0.0.11:35357/v2.0    
+	 
+	 
 7. Create roles
 
 8. Create tenata
