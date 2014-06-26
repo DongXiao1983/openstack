@@ -59,3 +59,22 @@
 	    yum install openstack-trove* 
 
 add: openstack-nova maybe has conflicate between icehouse and common repo
+
+
+7. Env export:    
+
+	[root@cloud ~]export SERVICE_TOKEN="ADMIN"
+	[root@cloud ~]export SERVICE_ENDPOINT="http://100.0.0.11:35357/v2.0"
+	[root@cloud ~]unset OS_TENANT_NAME
+	[root@cloud ~]unset OS_USERNAME
+	[root@cloud ~]unset OS_PASSWORD
+	[root@cloud ~]unset OS_AUTH_URL
+	[root@cloud ~]keystone user-list
+	+----------------------------------+--------+---------+-------------------+
+	|                id                |  name  | enabled |       email       |
+	+----------------------------------+--------+---------+-------------------+
+	| c6bdf1c356ef40eb80e7926b9c129b6b | admin  |   True  |  admin@domain.com |
+	| fac91d6cf3454fd584c7308e2618cb8c | glance |   True  | glance@domain.com |
+	+----------------------------------+--------+---------+-------------------+
+	
+	
