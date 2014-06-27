@@ -6,6 +6,8 @@
 		virtualization
 		python > 3.0
 		vnc
+		xfsprogs   
+		xinetd
 
 2. Make a icehouse repo   
 
@@ -86,4 +88,4 @@ add: openstack-nova maybe has conflicate between icehouse and common repo
 	CACHESIZE="122445"
 	OPTIONS="-l 0.0.0.0 -U 11211 -t 32"
 	
-	
+9. 	
