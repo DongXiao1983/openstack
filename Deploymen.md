@@ -77,4 +77,13 @@ add: openstack-nova maybe has conflicate between icehouse and common repo
 	| fac91d6cf3454fd584c7308e2618cb8c | glance |   True  | glance@domain.com |
 	+----------------------------------+--------+---------+-------------------+
 	
+8. Dashboard    
+
+        vim /etc/sysconfig/memcached
+	PORT="11211"
+	USER="memcached"
+	MAXCONN="8192"
+	CACHESIZE="122445"
+	OPTIONS="-l 0.0.0.0 -U 11211 -t 32"
+	
 	
