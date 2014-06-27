@@ -8,6 +8,8 @@
 		vnc
 		xfsprogs   
 		xinetd
+		mongodb-server
+		mongodb
 
 2. Make a icehouse repo   
 
