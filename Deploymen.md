@@ -10,6 +10,8 @@
 		xinetd
 		mongodb-server
 		mongodb
+		lzip
+		gmp > 6.0
 
 2. Make a icehouse repo   
 
