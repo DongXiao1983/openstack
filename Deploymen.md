@@ -120,3 +120,51 @@ identity_uri = http://127.0.0.1:35357
 Using the original format will continue to work but you’ll see a deprecation message like:
 
 WARNING keystoneclient.middleware.auth_token [-] Configuring admin URI using auth fragments. This is dep
+
+
+10.    Pack
+yum update
+    2  ifconfig
+    3  shutdown
+    4  init 0
+    5  ll
+    6  yum install yum-plugin-priorities
+    7  yum install http://repos.fedorapeople.org/repos/openstack/openstack-icehouse/rdo-release-icehouse-3.noarch.rpm
+    8  yum install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+    9  ps -ef | grep yum
+   10  yum install http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+   11  yum install openstack-utils
+   12  yum install openstack-selinux
+   13  yum upgrade
+   14  yum install -y openstack-packstack
+   15  ifconfig eth0
+   16  ifconfig eth1
+   17  yum install wget -y
+   18  fdisk
+   19  fdisk -l
+   20  packstack --install-hosts=192.168.1.104
+   21  yum -d 0 -e 0 -y install mariadb-galera-server
+   22  yum --help
+   23  yum erase mysql-server-5.1.73-3.el6_5.x86_64
+   24  packstack --install-hosts=192.168.1.104
+   25  yum install restorecon*
+   26  yum install *restorecon*
+   27  yum -y install policycoreutils
+   28  vim /var/tmp/packstack/20140703-050807-TC189x/manifests/192.168.1.104_swift.pp.log
+   29  cd /etc/glance/glance-api.conf
+   30  openstack-status
+   31  ll
+   32  vim keystonerc_admin
+   33  vim packstack-answers-20140703-050807.txt
+   34  vim /etc/glance/glance-api.conf
+   35  service openstack-glance-api status
+   36  openstack-status
+   37  ll
+   38  source keystonerc_admin
+   39  openstack-status
+   40  exit
+   41  init 0
+   42  ll
+   43  history
+   44  q!
+
