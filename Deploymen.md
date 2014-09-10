@@ -122,6 +122,39 @@ Using the original format will continue to work but you’ll see a deprecation m
 WARNING keystoneclient.middleware.auth_token [-] Configuring admin URI using auth fragments. This is dep
 
 
+
+
+
+OpenStack
+
+ glance image-create --name SPRIENT --disk-format=raw --is-public=true --container-format=bare < /root/vCFPU0.img
+
+neutron port-create internel --mac-address 52:54:00:12:CF:01
+neutron port-create internel --mac-address 52:54:00:12:CF:02
+neutron port-create internel --mac-address 52:54:00:12:CF:03
+neutron port-create internel --mac-address 52:54:00:12:CF:04
+neutron port-create internel --mac-address 52:54:00:12:CF:05
+neutron port-create externel --mac-address 52:54:00:de:ad:e1
+neutron port-create externel --mac-address 52:54:00:de:ad:e2
+neutron port-create externel --mac-address 52:54:00:de:ad:e3
+neutron port-create externel --mac-address 52:54:00:de:ad:e4
+
+
+
+nova boot --flavor CFPU --image `glance image-list | grep cfpu | awk ' { print $2 }'`  --nic port-id=`neutron port-list | grep 12:CF:01 | awk ' { print $2 }'` --nic port-id=`neutron port-list | grep ad:e1 | awk ' { print $2 }'` CFPU
+nova boot --flavor CSPU --image ec2c535d-7cca-4e79-901e-02fec18526aa --nic port-id=`neutron port-list | grep 12:CF:02 | awk ' { print $2 }'` --nic port-id=`neutron port-list | grep ad:e2 | awk ' { print $2 }'` CSPU
+nova boot --flavor USPU --image ec2c535d-7cca-4e79-901e-02fec18526aa --nic port-id=`neutron port-list | grep 12:CF:03 | awk ' { print $2 }'`  --nic port-id=`neutron port-list | grep ad:e3 | awk ' { print $2 }'` USPU
+
+nova boot --flavor EIPU --image ec2c535d-7cca-4e79-901e-02fec18526aa --nic  port-id=`neutron port-list | grep 12:CF:04 | awk ' { print $2 }' ` --nic port-id=`neutron port-list | grep ad:e4 | awk ' { print $2 }' `  EIPU 
+
+
+
+nova interface-attach --port-id `neutron port-list | grep ad:e5 | awk ' { print $2 }' `  `nova list | grep -i eipu |  awk ' { print $2 }' `
+nova interface-attach --port-id `neutron port-list | grep CF:05 | awk ' { print $2 }' `  `nova list | grep -i eipu |  awk ' { print $2 }' `
+
+
+
+ovs-vsctl list Interface | grep ofport_request -B 3
 10.    Pack
 yum update
     2  ifconfig
