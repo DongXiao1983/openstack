@@ -130,6 +130,7 @@ This made sense in code when using httplib for communication where you use each 
 
     glance image-create --name SPRIENT --disk-format=raw --is-public=true --container-format=bare < /root/vCFPU0.img
 
+11. All of this document is out of data
 
     neutron port-create internel --mac-address 52:54:00:12:CF:01
     neutron port-create internel --mac-address 52:54:00:12:CF:02
