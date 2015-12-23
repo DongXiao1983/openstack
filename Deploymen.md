@@ -132,15 +132,15 @@ This made sense in code when using httplib for communication where you use each 
 
 11. All of this document is out of data
 
-    neutron port-create internel --mac-address 52:54:00:12:CF:01
-    neutron port-create internel --mac-address 52:54:00:12:CF:02
-    neutron port-create internel --mac-address 52:54:00:12:CF:03
-    neutron port-create internel --mac-address 52:54:00:12:CF:04
-    neutron port-create internel --mac-address 52:54:00:12:CF:05
-    neutron port-create externel --mac-address 52:54:00:de:ad:e1
-    neutron port-create externel --mac-address 52:54:00:de:ad:e2
-    neutron port-create externel --mac-address 52:54:00:de:ad:e3
-    neutron port-create externel --mac-address 52:54:00:de:ad:e4
+    neutron port-create internel --mac-address 52:54:00:12:CF:01   
+    neutron port-create internel --mac-address 52:54:00:12:CF:02   
+    neutron port-create internel --mac-address 52:54:00:12:CF:03   
+    neutron port-create internel --mac-address 52:54:00:12:CF:04   
+    neutron port-create internel --mac-address 52:54:00:12:CF:05   
+    neutron port-create externel --mac-address 52:54:00:de:ad:e1   
+    neutron port-create externel --mac-address 52:54:00:de:ad:e2   
+    neutron port-create externel --mac-address 52:54:00:de:ad:e3   
+    neutron port-create externel --mac-address 52:54:00:de:ad:e4   
 
 
 
